@@ -1,24 +1,24 @@
 {
   "name": "react-template",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
-  "license": "MIT",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/WantenMN/react-template.git"
   },
+  "license": "MIT",
   "author": {
     "name": "Wanten",
     "email": "WantenMN@gmail.com"
   },
+  "type": "module",
   "scripts": {
+    "build": "tsc && vite build",
     "dev": "vite",
     "dev:host": "vite --host",
-    "build": "tsc && vite build",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\""
+    "preview": "vite preview"
   },
   "dependencies": {
     "classnames": "^2.3.2",
